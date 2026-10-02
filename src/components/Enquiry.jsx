@@ -14,9 +14,9 @@ import emailjs from "@emailjs/browser";
 // EMAILJS CONFIGURATION
 // ========================================
 
-const EMAILJS_SERVICE_ID = "service_chn68x8";
-const EMAILJS_TEMPLATE_ID = "template_0u604ht";
-const EMAILJS_PUBLIC_KEY = "7rXl8iFLG19B0zrbT";
+const EMAILJS_SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+const EMAILJS_TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+const EMAILJS_PUBLIC_KEY = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
 
 function Enquiry() {
   const [sending, setSending] = useState(false);
